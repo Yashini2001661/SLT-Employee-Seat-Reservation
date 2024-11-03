@@ -1,0 +1,17 @@
+diff a/app/Http/Controllers/BookingController.php b/app/Http/Controllers/BookingController.php	(rejected hunks)
+@@ -1,12 +1,15 @@
+ <?php
+ 
+ namespace App\Http\Controllers;
++use App\Mail\BookingConfirmationMail;
+ 
+ use Illuminate\Http\Request;
+ use App\Models\DateSeat;
+ use App\Models\BookingDetail; // Model for booking_details table
+ use App\Models\User;
+ use Illuminate\Support\Facades\Auth;
++use Illuminate\Support\Facades\Mail;
++
+ 
+ class BookingController extends Controller
+ {

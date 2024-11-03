@@ -1,0 +1,68 @@
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+    justify-items: center;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+    transform: rotate(0deg);
+}
+
+.status-label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.status-label div {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+.vertical-line {
+    border-left: 2px solid #ccc;
+    height: 101%;
+    margin: 0 15px;
+    margin-top: 15px;
+}
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+.available {
+    background-color: green;
+    cursor: pointer;
+}
+.booked {
+    background-color: blue;
+    cursor: not-allowed;
+}
+
+.selected {
+    background-color: orange;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6)
+        ),
+        linear-gradient(135deg, #1a5ebf, #4fb846);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 100vh;
+    margin: 0;
+}

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+body {
+    font-family: "Poppins", sans-serif;
+    background: white;
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+/*------------ Login container ------------*/
+.box-area {
+    width: 930px;
+}
+/*------------ Right box ------------*/
+.right-box {
+    padding: 50px 40px 50px 50px;
+}
+/*------------ Custom Placeholder ------------*/
+::placeholder {
+    font-size: 16px;
+}
+.rounded-4 {
+    border-radius: 20px;
+}
+.rounded-5 {
+    border-radius: 30px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+body {
+    font-family: "Poppins", sans-serif;
+    background: white;
+    background: url("../images/background.jpg");
+}
+
+.box-area {
+    width: 930px;
+}
+
+.right-box {
+    padding: 50px 40px 50px 50px;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+.rounded-4 {
+    border-radius: 20px;
+}
+.rounded-5 {
+    border-radius: 30px;
+}
+.custom-button {
+    background: linear-gradient(90deg, #0f7dc2, #004476);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-button:hover {
+    background: linear-gradient(90deg, #004476, #0f7dc2);
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.signup-btn {
+    color: #004476;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-btn:hover {
+    color: #0f7dc2;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+    .right-box {
+        padding: 20px;
+    }
+}
+
+.error-message {
+    color: red; /* Style for error message */
+    font-size: 16px;
+}
+.btn-custom {
+    background-color: green;
+    width: 100%; /* Make button full width */
+    color: white;
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+.btn-custom:hover {
+    background-color: darkgreen; /* Darker green on hover */
+    color: white;
+}
+.admin-link {
+    color: green;
+    display: block; /* Make link a block element */
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Space between user button and admin link */
+    transition: color 0.3s; /* Smooth transition for hover */
+    text-decoration: none;
+}
+.admin-link:hover {
+    color: blue; /* Darker color on hover */
+    text-decoration: underline;
+}
+
+/*------------ For small screens------------*/
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+    .right-box {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,406 @@
+.navbar {
+    background-color: #004476;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar-logo img {
+    width: 200px;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-links a:hover {
+    color: green;
+    text-shadow: yellow;
+}
+
+.hero-section {
+    background-image: url("office-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.admin-panel {
+    padding: 100px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.admin-panel h1 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.admin-panel-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.admin-panel-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.reservation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.reservation-table th,
+.reservation-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.reservation-table th {
+    background: linear-gradient(90deg, #0f7dc2, #004476);
+    color: white;
+    font-weight: bold;
+}
+
+.reservation-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.reservation-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.centered-heading {
+    text-align: center;
+    margin: 20px 0;
+}
+.footer {
+    background-color: #004476;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-top: auto;
+    font-size: 0.8rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contact-details {
+    flex: 1;
+    text-align: left;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.social-media {
+    flex: 1;
+    text-align: right;
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+}
+
+.footer-content {
+    margin-top: 0.5rem;
+}
+.contact-details p {
+    font-size: 0.9rem;
+}
+
+.save-attendance .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(90deg, #004476, #0f7dc2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.save-attendance .btn:hover {
+    background: linear-gradient(90deg, #0f7dc2, #004476);
+}
+
+.view-attendance {
+    margin-top: 15px;
+}
+
+.view-attendance a {
+    color: #1256bc;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.view-attendance a:hover {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.mark-attendance {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.mark-attendance a {
+    color: #1256bc;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.mark-attendance a:hover {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Aligns children to the ends */
+    margin-top: 20px; /* Adds some space above the buttons */
+}
+
+.save-attendance,
+.print {
+    flex: 1; /* Allows them to take equal space */
+}
+
+.save-attendance {
+    text-align: left; /* Aligns left button text */
+}
+
+.print {
+    text-align: right; /* Aligns right button text */
+}
+
+.print .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(90deg, #004476, #0f7dc2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.print .btn:hover {
+    background: linear-gradient(90deg, #0f7dc2, #004476);
+}
+/* Filter Controls Styling */
+.filter-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6f0ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.filter-item-1,
+.filter-item-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.filter-item-1 {
+    justify-content: flex-start;
+}
+
+.filter-item-2 {
+    justify-content: flex-end;
+}
+
+.filter-item-1 label,
+.filter-item-2 label {
+    margin-right: 10px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* text box and label my */
+input[type="date"],
+input[type="text"] {
+    width: 280px;
+    height: 12px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Times New Roman", serif;
+}
+
+.filter-item-1 label,
+.filter-item-2 label {
+    font-size: 16px;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.filter-item-1,
+.filter-item-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+/* end */
+
+.filter-buttons button {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #004476, #0f7dc2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filter-buttons button:hover {
+    background: linear-gradient(90deg, #0f7dc2, #004476);
+}
+
+.filter-buttons i {
+    margin-right: 3px;
+}
+
+.fixed-size {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.fixed-size th,
+.fixed-size td {
+    width: 16.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar-alt {
+    width: 250px;
+    background: linear-gradient(90deg, #0f7dc2, #004476);
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar-header {
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin: 20px 0;
+}
+
+.sidebar-menu a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e7f1ff;
+}
+
+.sidebar-menu a i {
+    margin-right: 10px;
+}
+
+.admin-panel {
+    flex: 1;
+    padding: 20px;
+}
